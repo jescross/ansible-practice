@@ -1,7 +1,6 @@
 all:
-  all:
   hosts:
   children:
     myserver:
       hosts:
-    10.2.0.62
+        10.2.0.62
