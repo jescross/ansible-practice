@@ -1,9 +1,9 @@
 ---
 - hosts: myserver
   tasks:
-    name: test connection
-    ping:
-- name: Install the package "npm"
-  apt:
-    name: npm  
-    state: present
+   - name: test connection
+     ping:
+   - name: Install the package "npm"
+     apt:
+       name: npm  
+       state: present
