@@ -1,13 +1,10 @@
 all:
   hosts:
-    mail.example.com
+    myserver
   children:
     webservers:
       hosts:
-        foo.example.com:
-        bar.example.com:
+        myserver
     dbservers:
       hosts:
-        one.example.com:
-        two.example.com:
-        three.example.com:
+        myserver
