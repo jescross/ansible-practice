@@ -1,11 +1,9 @@
 ---
-- name: Install "apt package script" using apt
-  npm: 
-  	name: apt package
-  	path: /tmp/location
-
-- name: Install "npm-package-script" node.js package on version 0.0.0
-  npm:
-  	name: "npm-package-script"
-  	version: 0.0.0
-  	path: /tmp/location
+- hosts: myserver
+  tasks:
+    name: test connection
+    ping:
+- name: Install the package "npm"
+  apt:
+    name: npm  
+    state: present
