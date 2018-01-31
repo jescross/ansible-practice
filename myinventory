@@ -1,10 +1,7 @@
 all:
+  all:
   hosts:
-    myserver
   children:
-    webservers:
+    myserver:
       hosts:
-        myserver
-    dbservers:
-      hosts:
-        myserver
+    10.2.0.62
