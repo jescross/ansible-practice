@@ -4,7 +4,10 @@
   ping:
 - name: Install the package "npm"
   apt:
-    name: npm  
+    name: "{{ item }}" 
     state: present
   become: true
+  with_items: 
+    - "{{ packages }}" 
+
 
